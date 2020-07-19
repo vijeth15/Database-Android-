@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="298dp"
+        android:ems="10"
+        android:hint="Enter email"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:layout_marginBottom="206dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginLogin"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="115dp"
+        android:background="@drawable/round_btn"
+        android:text="Login"
+        android:textSize="22dp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/loginRegister"
+        android:layout_width="155dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="228dp"
+        android:layout_marginRight="228dp"
+        android:layout_marginBottom="115dp"
+        android:background="@drawable/round_btn"
+        android:text="Register"
+        android:onClick="gotoregiter"
+        android:textSize="22dp"
+        android:textColor="#fff" />
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newcust"
+    tools:context=".showcustomersActivity">
+
+
+    <TextView
+        android:id="@+id/displaycustomers"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="79dp"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="333dp"
+        android:layout_marginRight="333dp"
+        android:layout_marginBottom="35dp"
+        android:text="count:-"
+        android:textColor="#fff"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/countofcustomerss"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="253dp"
+        android:layout_marginRight="253dp"
+        android:layout_marginBottom="38dp"
+
+        android:textColor="#fff"
+        android:textSize="22dp" />
+
+    <Button
+        android:id="@+id/buttonfromcusttoprod"
+        android:layout_width="123dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/round_btn"
+        android:textColor="#fff"
+        android:text="get details" />
+
+    <EditText
+        android:id="@+id/editTextfromcusttoprod"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="145dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:hint="enter id" />
+
+</RelativeLayout>

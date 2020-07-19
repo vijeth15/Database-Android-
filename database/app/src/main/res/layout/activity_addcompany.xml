@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/company"
+    tools:context=".addcompanyActivity">
+
+
+    <EditText
+        android:id="@+id/companyid"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
+        android:layout_marginBottom="529dp"
+        android:ems="10"
+        android:hint="company id"
+        android:inputType="textPersonName"
+
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/companylocation"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
+        android:layout_marginBottom="258dp"
+        android:ems="10"
+        android:hint="company location"
+        android:inputType="textPersonName"
+
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/companyemail"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="362dp"
+        android:ems="10"
+        android:hint="company email"
+        android:inputType="textPersonName"
+
+        android:textColorHint="#000" />
+
+    <EditText
+        android:id="@+id/companyname"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        android:layout_marginBottom="449dp"
+        android:ems="10"
+        android:hint="company name"
+        android:inputType="textPersonName"
+
+        android:textColorHint="#000" />
+
+    <Button
+        android:id="@+id/submitforcompany"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginRight="127dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/round_btn"
+        android:text="SUBMIT"
+        android:textColor="#fff" />
+</RelativeLayout>

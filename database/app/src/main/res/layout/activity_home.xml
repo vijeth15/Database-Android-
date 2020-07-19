@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepagebackground"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/gettextfromlogin"
+
+            android:layout_alignRight="@+id/gettextfromlogin"
+            android:layout_marginEnd="160dp"
+            android:layout_marginRight="160dp"
+            android:text="Logged in as"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gettextfromlogin"
+            android:layout_width="161dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:text=" "
+            android:textColor="#AE1438"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="389dp"
+        android:layout_height="642dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="385dp"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CUSTOMERS"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:textStyle="italic"
+
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttoncustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="New customer"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonshowcustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="Show customers"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="385dp"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="PRODUCTS"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:textStyle="italic"
+
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonaddmedicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="Add Products"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonviewavailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="Show Products"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonupdatemedicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="Update Product"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/logs"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="deleted records"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/buttondeletemedicine"
+                    android:layout_width="208dp"
+                    android:layout_height="107dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="-10dp"
+                    android:layout_marginRight="-10dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="delete Product"
+                    android:textColor="#fff" />
+
+                <EditText
+                    android:id="@+id/fordeletion"
+                    android:layout_width="176dp"
+                    android:layout_height="82dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="205dp"
+                    android:layout_marginRight="205dp"
+                    android:hint="enter id to delete"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="385dp"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="COMPANY"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:textStyle="italic"
+
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/addcompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="Add companies"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/showcompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="show companies"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/updateordeletecompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="update or delete company"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="385dp"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="CART"
+                    android:textColor="#fff"
+                    android:textSize="24dp"
+                    android:textStyle="italic"
+
+                    />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonforcart"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="Go To Cart"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonsoldoutitems"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/roun_rect_orange"
+                    android:text="Sold out items"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:background="@drawable/background"-->
+<!--    tools:context=".homeActivity"-->
+<!--    android:layout_height="match_parent">-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/buttoncustomer"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="56dp"-->
+<!--        android:layout_marginRight="56dp"-->
+<!--        android:layout_marginBottom="572dp"-->
+
+<!--        android:background="#000"-->
+<!--        android:text="New customer"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="16dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonshowcustomer"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="56dp"-->
+<!--        android:layout_marginRight="56dp"-->
+<!--        android:layout_marginBottom="520dp"-->
+
+<!--        android:background="#000"-->
+<!--        android:text="Show customers"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="16dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonaddmedicine"-->
+<!--        android:layout_width="290dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+
+<!--        android:layout_marginEnd="58dp"-->
+<!--        android:layout_marginRight="58dp"-->
+<!--        android:layout_marginBottom="473dp"-->
+<!--        android:background="#000"-->
+<!--        android:text="Add Products"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="16dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonviewavailable"-->
+<!--        android:layout_width="283dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="74dp"-->
+<!--        android:layout_marginRight="74dp"-->
+<!--        android:layout_marginBottom="424dp"-->
+<!--        android:background="#000"-->
+<!--        android:text="Show Products"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="16dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonupdatemedicine"-->
+<!--        android:layout_width="278dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="64dp"-->
+<!--        android:layout_marginRight="64dp"-->
+<!--        android:layout_marginBottom="372dp"-->
+<!--        android:background="#000"-->
+<!--        android:text="Update Product"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="16dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttondeletemedicine"-->
+<!--        android:layout_width="123dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="71dp"-->
+<!--        android:layout_marginRight="71dp"-->
+<!--        android:layout_marginBottom="318dp"-->
+<!--        android:background="#000"-->
+<!--        android:text="delete Product"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textSize="16dp" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/fordeletion"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="197dp"-->
+<!--        android:layout_marginRight="197dp"-->
+<!--        android:layout_marginBottom="327dp"-->
+<!--        android:hint="enter id to delete"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textColorHint="#fff"-->
+<!--        android:textSize="20dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonforcart"-->
+<!--        android:layout_width="279dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="73dp"-->
+<!--        android:layout_marginRight="73dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:background="#000"-->
+<!--        android:text="Go To Cart"-->
+<!--        android:textColor="#ffff" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="106dp"-->
+<!--        android:layout_marginRight="106dp"-->
+<!--        android:layout_marginBottom="631dp"-->
+<!--        android:text="Logged in as"-->
+<!--        android:textColor="#fff"-->
+<!--        android:textStyle="italic" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/gettextfromlogin"-->
+<!--        android:layout_width="86dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="7dp"-->
+<!--        android:layout_marginRight="7dp"-->
+<!--        android:layout_marginBottom="629dp"-->
+<!--        android:text=" "-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#6B0909" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/addcompany"-->
+<!--        android:layout_width="272dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="77dp"-->
+<!--        android:layout_marginRight="77dp"-->
+<!--        android:layout_marginBottom="261dp"-->
+<!--        android:text="Add companies" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/showcompany"-->
+<!--        android:layout_width="265dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="81dp"-->
+<!--        android:layout_marginRight="81dp"-->
+<!--        android:layout_marginBottom="203dp"-->
+<!--        android:text="show companies" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/logs"-->
+<!--        android:layout_width="279dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="70dp"-->
+<!--        android:layout_marginRight="70dp"-->
+<!--        android:layout_marginBottom="80dp"-->
+<!--        android:text="deleted records" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/updateordeletecompany"-->
+<!--        android:layout_width="264dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignEnd="@+id/gettextfromlogin"-->
+<!--        android:layout_alignRight="@+id/gettextfromlogin"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="74dp"-->
+<!--        android:layout_marginRight="74dp"-->
+<!--        android:layout_marginBottom="143dp"-->
+<!--        android:text="update or delete company" />-->
+
+
+<!--    &lt;!&ndash;    <ListView&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/listview1"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="370dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="494dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:outlineAmbientShadowColor="#fff"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:cacheColorHint="#fff"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_alignParentEnd="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_alignParentRight="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_alignParentBottom="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginEnd="17dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginRight="17dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginBottom="155dp" />&ndash;&gt;-->
+<!--</RelativeLayout>-->

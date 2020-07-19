@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.databaseproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".custtoinfoActivity"></activity>
+        <activity android:name=".soldoutitemsActivity" />
+        <activity android:name=".updateordeleteActivity" />
+        <activity android:name=".fromcompanttoproductActivity" />
+        <activity android:name=".billActivity" />
+        <activity android:name=".logsActivity" />
+        <activity android:name=".showcompanyActivity" />
+        <activity android:name=".addcompanyActivity" />
+        <activity android:name=".showcustomersActivity" />
+        <activity android:name=".customerDetailsActivity" />
+        <activity android:name=".showDetailsActivity" />
+        <activity android:name=".cartActivity" />
+        <activity android:name=".updateMedicineActivity" />
+        <activity android:name=".medicineActivity" />
+        <activity android:name=".homeActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
